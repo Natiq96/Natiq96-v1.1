@@ -1,0 +1,1123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors
+    background-color: rgb(200,220,220,0.8);
+
+ */
+
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200,220,220,0.8);
+}
+
+.navbar-con{
+    width: 150rem;
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-menu{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-profile{
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu ion-icon,.navbar-profile ion-icon{
+    font-size: 3.2rem;
+    color: black;
+}
+
+.links{
+    display: flex;
+    gap: 2rem;
+    height: 8rem;
+    align-items: center;
+}
+
+.sosial{
+    display: flex;
+    gap:2rem;
+    height: 8rem;
+    align-items: center;
+}
+
+.sosial a ion-icon{
+    color: black;
+    font-size: 2.4rem;
+}
+
+.links a{
+    color: black;
+}
+
+/* solidbar */
+
+.solid-bar{
+    width: 40rem;
+    min-height: calc(100vh - 10rem);
+    background-color: rgb(200,220,220,0.8);
+    border-top: solid 1px white;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+}
+
+.head-exit-solidbar{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.exit{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exit p{
+    color: black;
+    font-size: 2.4rem;
+}
+
+.exit p:hover{
+    color: rgb(148, 31, 18);
+    transition: 1s color;
+}
+
+.soli-item{
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(250,250,250,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    transition: all .5s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    color: black;
+    font-size: 1.8rem;
+}
+
+.soli-item-hidden{
+    display: none;
+}
+
+.soli-item a{
+    font-size: 1.8rem;
+    color: black;
+}
+
+.soli-item:hover{
+    box-shadow: none;
+    transition: all .5s;
+}
+
+/* developers */
+
+.developers-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 10rem);
+    /* align-items: center; */
+}
+
+.developers-con{
+    width: 150rem;
+}
+
+.dev-head{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+}
+
+.dev-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.developer-1{
+    width: 30rem;
+    background-color: rgb(200,220,220,0.8);
+    display: flex;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.logo{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.img{
+    width: 8rem;
+    height: 8rem;
+    background-size:cover; /* Yalnız şəkilin dəyərini dəyişdirin: cover, contain, ya da auto */
+    background-position: center; /* Şəkilin ortada görünməsi üçün */
+    background-repeat: no-repeat; 
+    border-radius: 50%;
+}
+
+.fullname{
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.name,.work{
+    font-size: 1.8rem;
+    height:  2rem;
+}
+.insta{
+    font-size: 1.5rem;
+}
+
+.insta a{
+    display: flex;
+    color: black;
+    align-items: center;
+    gap: .2rem;
+}
+
+.insta ion-icon{
+    color: rgb(255, 0, 212);
+}
+
+
+@media only screen and (max-width: 1700px) {
+    .navbar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200,220,220,0.8);
+}
+
+    .navbar-con{
+        width: 120rem;
+        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-menu{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-profile{
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-menu ion-icon,.navbar-profile ion-icon{
+        font-size: 3.2rem;
+        color: black;
+    }
+
+    .links{
+        display: flex;
+        gap: 2rem;
+        height: 8rem;
+        align-items: center;
+    }
+
+    .sosial{
+        display: flex;
+        gap:2rem;
+        height: 8rem;
+        align-items: center;
+    }
+
+    .sosial a ion-icon{
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .links a{
+        color: black;
+    }
+
+    /* solidbar */
+
+    .solid-bar{
+        width: 40rem;
+        min-height: calc(100vh - 10rem);
+        background-color: rgb(200,220,220,0.8);
+        border-top: solid 1px white;
+        padding: 1rem;
+        display: none;
+        flex-direction: column;
+    }
+
+    .head-exit-solidbar{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .exit{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exit p{
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .exit p:hover{
+        color: rgb(148, 31, 18);
+        transition: 1s color;
+    }
+
+    .soli-item{
+        width: 100%;
+        height: 3rem;
+        background-color: rgb(250,250,250,0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        transition: all .5s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        color: black;
+        font-size: 1.8rem;
+    }
+
+    .soli-item a{
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    .soli-item:hover{
+        box-shadow: none;
+        transition: all .5s;
+    }
+
+    /* developers */
+
+    .developers-page{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: calc(100vh - 10rem);
+        /* align-items: center; */
+    }
+
+    .developers-con{
+        width: 120rem;
+    }
+
+    .dev-head{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4rem;
+    }
+
+    .dev-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .developer-1{
+        width: 30rem;
+        background-color: rgb(200,220,220,0.8);
+        display: flex;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .logo{
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .img{
+        width: 8rem;
+        height: 8rem;
+        background-size:cover; /* Yalnız şəkilin dəyərini dəyişdirin: cover, contain, ya da auto */
+        background-position: center; /* Şəkilin ortada görünməsi üçün */
+        background-repeat: no-repeat; 
+    }
+
+    .fullname{
+        display: flex;
+        width: 100%;
+        height: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+    .name,.work{
+        font-size: 1.8rem;
+        height:  2rem;
+    }
+    .insta{
+        font-size: 1.5rem;
+    }
+
+    .insta a{
+        display: flex;
+        color: black;
+        align-items: center;
+        gap: .2rem;
+    }
+
+    .insta ion-icon{
+        color: rgb(255, 0, 212);
+    }
+
+}
+
+@media only screen and (max-width: 1500px) {
+    .navbar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200,220,220,0.8);
+}
+
+    .navbar-con{
+        width: 90rem;
+        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-menu{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-profile{
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-menu ion-icon,.navbar-profile ion-icon{
+        font-size: 3.2rem;
+        color: black;
+    }
+
+    .links{
+        display: flex;
+        gap: 2rem;
+        height: 8rem;
+        align-items: center;
+    }
+
+    .sosial{
+        display: flex;
+        gap:2rem;
+        height: 8rem;
+        align-items: center;
+    }
+
+    .sosial a ion-icon{
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .links a{
+        color: black;
+    }
+
+    /* solidbar */
+
+    .solid-bar{
+        width: 40rem;
+        min-height: calc(100vh - 10rem);
+        background-color: rgb(200,220,220,0.8);
+        border-top: solid 1px white;
+        padding: 1rem;
+        display: none;
+        flex-direction: column;
+    }
+
+    .head-exit-solidbar{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .exit{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exit p{
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .exit p:hover{
+        color: rgb(148, 31, 18);
+        transition: 1s color;
+    }
+
+    .soli-item{
+        width: 100%;
+        height: 3rem;
+        background-color: rgb(250,250,250,0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        transition: all .5s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        color: black;
+        font-size: 1.8rem;
+    }
+
+    .soli-item a{
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    .soli-item:hover{
+        box-shadow: none;
+        transition: all .5s;
+    }
+
+    /* developers */
+
+    .developers-page{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: calc(100vh - 10rem);
+        /* align-items: center; */
+    }
+
+    .developers-con{
+        width: 90rem;
+    }
+
+    .dev-head{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4rem;
+    }
+
+    .dev-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .developer-1{
+        width: 26rem;
+        background-color: rgb(200,220,220,0.8);
+        display: flex;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .logo{
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .img{
+        width: 8rem;
+        height: 8rem;
+        background-size:cover; /* Yalnız şəkilin dəyərini dəyişdirin: cover, contain, ya da auto */
+        background-position: center; /* Şəkilin ortada görünməsi üçün */
+        background-repeat: no-repeat; 
+    }
+
+    .fullname{
+        display: flex;
+        width: 100%;
+        height: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+    .name,.work{
+        font-size: 1.8rem;
+        height:  2rem;
+    }
+    .insta{
+        font-size: 1.5rem;
+    }
+
+    .insta a{
+        display: flex;
+        color: black;
+        align-items: center;
+        gap: .2rem;
+    }
+
+    .insta ion-icon{
+        color: rgb(255, 0, 212);
+    }
+
+}
+
+
+
+/* 1100px ucundur =-----------------------------= */
+
+@media only screen and (max-width: 1100px) {
+    .navbar{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200,220,220,0.8);
+}
+
+    .navbar-con{
+        width: 60rem;
+        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-menu{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-profile{
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-menu ion-icon,.navbar-profile ion-icon{
+        font-size: 3.2rem;
+        color: black;
+    }
+
+    .links{
+        display: none; 
+    }
+
+    .sosial{
+        display: none;
+    }
+
+    .sosial a ion-icon{
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .links a{
+        color: black;
+    }
+
+    /* solidbar */
+
+    .solid-bar{
+        width: 40rem;
+        min-height: calc(100vh - 10rem);
+        background-color: rgb(200,220,220,0.8);
+        border-top: solid 1px white;
+        padding: 1rem;
+        display: none;
+        flex-direction: column;
+    }
+
+    .head-exit-solidbar{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .exit{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exit p{
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .exit p:hover{
+        color: rgb(148, 31, 18);
+        transition: 1s color;
+    }
+
+    .soli-item{
+        width: 100%;
+        height: 3rem;
+        background-color: rgb(250,250,250,0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        transition: all .5s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        color: black;
+        font-size: 1.8rem;
+    }
+
+    .soli-item a{
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    .soli-item:hover{
+        box-shadow: none;
+        transition: all .5s;
+    }
+
+    /* developers */
+
+    .developers-page{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: calc(100vh - 10rem);
+        /* align-items: center; */
+    }
+
+    .developers-con{
+        width: 120rem;
+    }
+
+    .dev-head{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4rem;
+    }
+
+    .dev-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+
+    .developer-1{
+        width: 30rem;
+        background-color: rgb(200,220,220,0.8);
+        display: flex;
+        padding: 1rem;
+        border-radius: 2rem;
+    }
+
+    .logo{
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .img{
+        width: 8rem;
+        height: 8rem;
+        background-size:cover; /* Yalnız şəkilin dəyərini dəyişdirin: cover, contain, ya da auto */
+        background-position: center; /* Şəkilin ortada görünməsi üçün */
+        background-repeat: no-repeat; 
+    }
+
+    .fullname{
+        display: flex;
+        width: 100%;
+        height: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+    .name,.work{
+        font-size: 1.8rem;
+        height:  2rem;
+    }
+    .insta{
+        font-size: 1.5rem;
+    }
+
+    .insta a{
+        display: flex;
+        color: black;
+        align-items: center;
+        gap: .2rem;
+    }
+
+    .insta ion-icon{
+        color: rgb(255, 0, 212);
+    }
+
+}
+
+
+
+/* 700px ucundur =-----------------------------= */
+
+@media only screen and (max-width: 700px) {
+    .navbar{
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(200,220,220,0.8);
+    }
+
+    .navbar-con{
+        width: 50rem;
+        height: 8rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-menu{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        width: 8rem;
+        height: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-profile{
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-menu ion-icon,.navbar-profile ion-icon{
+        font-size: 3.2rem;
+        color: black;
+    }
+
+    .links{
+        display: none; 
+    }
+
+    .sosial{
+        display: none;
+    }
+
+    .sosial a ion-icon{
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .links a{
+        color: black;
+    }
+
+    /* solidbar */
+
+    .solid-bar{
+        width: 100%;
+        min-height: calc(100vh - 10rem);
+        background-color: rgb(200,220,220,0.8);
+        border-top: solid 1px white;
+        padding: 1rem;
+        display: none;
+        flex-direction: column;
+    }
+
+    .head-exit-solidbar{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .exit{
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exit p{
+        color: black;
+        font-size: 2.4rem;
+    }
+
+    .exit p:hover{
+        color: rgb(148, 31, 18);
+        transition: 1s color;
+    }
+
+    .soli-item{
+        width: 100%;
+        height: 3rem;
+        background-color: rgb(250,250,250,0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        transition: all .5s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        color: black;
+        font-size: 1.8rem;
+    }
+
+    .soli-item a{
+        font-size: 1.8rem;
+        color: black;
+    }
+
+    .soli-item:hover{
+        box-shadow: none;
+        transition: all .5s;
+    }
+
+    /* developers */
+
+    .developers-page{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: calc(100vh - 10rem);
+        /* align-items: center; */
+    }
+
+    .developers-con{
+        width: 120rem;
+        overflow-y: auto;
+    }
+
+    .dev-head{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.4rem;
+    }
+
+    .dev-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developer-1{
+        width: 35rem;
+        background-color: rgb(200,220,220,0.8);
+        display: flex;
+        padding: 1rem;
+        border-radius: 2rem;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo{
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .img{
+        width: 8rem;
+        height: 8rem;
+        background-size:cover; /* Yalnız şəkilin dəyərini dəyişdirin: cover, contain, ya da auto */
+        background-position: center; /* Şəkilin ortada görünməsi üçün */
+        background-repeat: no-repeat; 
+    }
+
+    .fullname{
+        display: flex;
+        width: auto;
+        height: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+    .name,.work{
+        font-size: 1.8rem;
+        height:  2rem;
+    }
+    .insta{
+        font-size: 1.5rem;
+    }
+
+    .insta a{
+        display: flex;
+        color: black;
+        align-items: center;
+        gap: .2rem;
+    }
+
+    .insta ion-icon{
+        color: rgb(255, 0, 212);
+    }
+    .soli-item-hidden{
+        width: 100%;
+        height: 3rem;
+        background-color: rgb(250,250,250,0.4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        border-radius: 5rem;
+        transition: all .5s;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+        color: black;
+        font-size: 1.8rem;
+    }
+    .soli-item-hidden a{
+        color: black;
+    }
+}
+
+
